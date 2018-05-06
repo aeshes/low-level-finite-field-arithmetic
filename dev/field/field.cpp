@@ -32,6 +32,11 @@ namespace field
         return FieldElement({0, 0, 0, 0, 0});
     }
 
+    FieldElement one()
+    {
+        return FieldElement({1, 0, 0, 0, 0});
+    }
+
     FieldElement reduce(std::array<uint8_t, 5>& limbs)
     {
         const unsigned LOW_6_BIT_MASK = (1 << 6) - 1;
