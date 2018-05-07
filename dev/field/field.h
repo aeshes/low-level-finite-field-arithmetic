@@ -24,6 +24,8 @@ namespace field
 
     FieldElement zero();
     FieldElement one();
+
+    FieldElement reduce(std::array<uint8_t, 5>& a);
 }
 
 #endif
